@@ -9,8 +9,8 @@
 :root {
     --cor-principal: #000000;
     --cor-principal-hover: #303030;
-    --cor-secundaria: #A91D3A;
-    --cor-hover: #C73659;
+    --cor-secundaria: #ce0505;
+    --cor-hover: #f01111;
     --cor-texto: #EEEEEE;
     --montserrat: "Montserrat", "sans-serif";
 }
@@ -75,6 +75,39 @@ body{
     transform-origin: left;
     transform: scaleX(1);
     background-color: var(--cor-hover);
+}
+
+.videoBG{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.background__section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.background__section video {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+}
+
+.background__section__texto{
+    width: 50%;
+    height: 85%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 25%;
 }
 
 .main{
