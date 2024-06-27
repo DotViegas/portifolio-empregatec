@@ -225,6 +225,55 @@ strong{
     object-fit: cover;
 }
 
+.projetos {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/pxfuel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos__titulo{
+    width: 80%;
+    height: 10%;
+    /* background: #f01111; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.posicionamento__projeto__imagem{
+    width: 100vw;
+    height: 90vh;
+    /* background: greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos__imagem{
+    width: 80%;
+    height: 80%;
+    /* background: rebeccapurple; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projetos__imagem__item{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
 .footer {
     width: 100vw;
     height: 5vh;
