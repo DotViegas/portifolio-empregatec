@@ -263,11 +263,19 @@ strong{
     flex-wrap: wrap;
 }
 
+.projetos__imagem__ancora {
+    transition: all 0.5s ease-in-out; 
+}
+
 .projetos__imagem__item{
     width: 300px;
     height: 180px;
     border-radius: 10px;
 }
+
+.projetos__imagem__ancora:hover {
+    transform: scale(1.1);
+  }
 
 .tituloitem_span {
     color: var(--cor-secundaria);
