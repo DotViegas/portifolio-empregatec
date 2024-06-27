@@ -281,6 +281,10 @@ strong{
     color: var(--cor-secundaria);
 }
 
+.tituloitem_span2{
+    color: indigo;
+}
+
 .animation__capa{
     color: #737500;
 }
