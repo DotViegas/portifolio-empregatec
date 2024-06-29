@@ -294,6 +294,75 @@ a {
     color: var(--cor-texto);
 }
 
+.certificados {
+    width: 100vw;
+    height: 960vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificados__titulo{
+    width: 80%;
+    height: 10vh;
+    /* background: #f01111; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.posicionamento__certificados__imagem{
+    width: 100vw;
+    height: 950vh;
+    /* background: greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificados__imagem{
+    width: 90vw;
+    height: 940vh;
+    /* background: rebeccapurple; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.certificados__imagem__pai{
+    width: 75vw;
+    height: 250px;
+    background: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.certificados__imagem__filho__foto{
+    max-width: 350px;
+    width: 350px;
+    height: 190px;
+    object-fit: cover;
+    margin: 0 0 0 30px;
+}
+
+.certificados__imagem__filho__informações{
+    width: 40vw;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificados__imagem__filho__informações__span{
+    color: var(--cor-secundaria);
+    font-size: 25px;
+}
+
 .footer {
     width: 100vw;
     height: 5vh;
