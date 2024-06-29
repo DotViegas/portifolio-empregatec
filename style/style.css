@@ -334,7 +334,7 @@ a {
 .certificados__imagem__pai{
     width: 75vw;
     height: 250px;
-    background: rgb(36, 36, 36);
+    background: rgb(20, 20, 20);
     display: flex;
     align-items: center;
     justify-content: flex-start;
