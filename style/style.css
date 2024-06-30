@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* -----------------------Variáveis----------------------------------------------------------- */
 
 :root {
     --cor-principal: #000000;
@@ -16,11 +12,22 @@
     --montserrat: "Montserrat", "sans-serif";
 }
 
+
+/* -----------------------Configuração incial do site------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: var(--cor-principal);
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
 }
+
+/* -----------------------Barra de navegação--------------------------------------------------- */
 
 .container{
     /* border: 1px solid red; */
@@ -56,6 +63,8 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
+/* -----------------------Barra de navegação: Animação------------------------------------------ */
+
 .container__nav__botao::after {
     content: '';
     position: absolute;
@@ -79,6 +88,8 @@ body{
     transform: scaleX(1);
     background-color: var(--cor-hover);
 }
+
+/* -----------------------Seção Apresentação com video------------------------------------------ */
 
 .videoBG{
     width: 100vw;
@@ -120,11 +131,15 @@ strong{
     font-size: 35px;
 }
 
+/* -----------------------Script typerJS-------------------------------------------------------- */
+
 .typer {
     font-family: "consolas", "sans-serif";
     color: var(--cor-secundaria);
     font-size: 50px;
 }
+
+/* -----------------------Seção Quem sou eu?---------------------------------------------------- */
 
 .about{
     /* border: 1px solid red; */
@@ -135,6 +150,8 @@ strong{
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* -----------------------Seção Quem sou eu? <Texto>-------------------------------------------- */
 
 .about__texto {
     /* border: 1px solid red; */
@@ -157,6 +174,8 @@ strong{
     align-items: flex-start;
     gap: 30px;
 }
+
+/* -----------------------Seção Quem sou eu? <Foto>--------------------------------------- */
 
 .about__imagem{
     width: 40vw;
@@ -184,6 +203,8 @@ strong{
     justify-content: center;
     align-items: center;
 }
+
+/* -----------------------Seção Quem sou eu? <Foto> : Animação--------------------------------------- */
 
 .about__imagem__foto__animacao::after{
     content: '';
@@ -225,6 +246,8 @@ strong{
     object-fit: cover;
 }
 
+/* -----------------------Seção Projetos-------------------------------------------------------- */
+
 .projetos {
     width: 100vw;
     height: 100vh;
@@ -244,6 +267,8 @@ strong{
     align-items: center;
     margin-left: 30px;
 }
+
+/* -----------------------Seção Projetos <imagem>----------------------------------------------- */
 
 .posicionamento__projeto__imagem{
     width: 100vw;
@@ -273,9 +298,13 @@ strong{
     border-radius: 10px;
 }
 
+/* -----------------------Seção Projetos <imagem> : animação------------------------------------ */
+
 .projetos__imagem__ancora:hover {
     transform: scale(1.1);
   }
+
+/* -----------------------Seção Projetos <imagem> : decoração----------------------------------- */
 
 .tituloitem_span {
     color: var(--cor-secundaria);
@@ -293,6 +322,8 @@ a {
     text-decoration: none;
     color: var(--cor-texto);
 }
+
+/* -----------------------Seção Certificados---------------------------------------------------- */
 
 .certificados {
     width: 100vw;
@@ -378,6 +409,8 @@ a {
     font-size: 0.75rem;
     color: var(--cor-texto);
 }
+
+/* -----------------------Animações------------------------------------------------------------- */
 
 @keyframes slideTop {
     0% {
