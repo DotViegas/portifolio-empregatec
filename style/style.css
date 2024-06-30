@@ -393,13 +393,17 @@ a {
 
 .footer {
     width: 100vw;
-    height: 5vh;
+    height: 8vh;
     background-color: var(--cor-secundaria);
     font-size: 0.75rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: var(--cor-principal);
+}
+
+.footer__texto{
+    margin: 10px;
 }
 
 .footer__name{
