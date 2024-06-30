@@ -15,13 +15,13 @@
 
 /* -----------------------Configuração incial do site------------------------------------------ */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: var(--cor-principal);
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
@@ -29,7 +29,7 @@ body{
 
 /* -----------------------Barra de navegação--------------------------------------------------- */
 
-.container{
+.container {
     /* border: 1px solid red; */
     width: 100vw;
     height: 10vh;
@@ -39,7 +39,7 @@ body{
     background: transparent;
 }
 
-.container__nav{
+.container__nav {
     /* border: 1px solid red; */
     width: 60%;
     height: 80%;
@@ -48,7 +48,7 @@ body{
     align-items: center;
 }
 
-.container__nav__botao{
+.container__nav__botao {
     width: 13%;
     height: 100%;
     display: flex;
@@ -91,14 +91,14 @@ body{
 
 /* -----------------------Seção Apresentação com video------------------------------------------ */
 
-.videoBG{
+.videoBG {
     width: 100vw;
     height: 100vh;
     position: relative;
     z-index: 0;
 }
 
-.background__section{
+.background__section {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -112,7 +112,7 @@ body{
     opacity: 0.9;
 }
 
-.background__section__texto{
+.background__section__texto {
     width: 50%;
     height: 85%;
     position: relative;
@@ -125,10 +125,10 @@ body{
     gap: 30px;
 }
 
-strong{
+strong {
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
-    font-size: 35px;
+    font-size: 2.18rem;
 }
 
 /* -----------------------Script typerJS-------------------------------------------------------- */
@@ -136,12 +136,12 @@ strong{
 .typer {
     font-family: "consolas", "sans-serif";
     color: var(--cor-secundaria);
-    font-size: 50px;
+    font-size: 3.12rem;
 }
 
 /* -----------------------Seção Quem sou eu?---------------------------------------------------- */
 
-.about{
+.about {
     /* border: 1px solid red; */
     width: 100vw;
     height: 100vh;
@@ -164,7 +164,7 @@ strong{
 
 }
 
-.about__texto__posicao{
+.about__texto__posicao {
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -177,7 +177,7 @@ strong{
 
 /* -----------------------Seção Quem sou eu? <Foto>--------------------------------------- */
 
-.about__imagem{
+.about__imagem {
     width: 40vw;
     height: 85vh;
     /* background: #f01111; */
@@ -186,14 +186,14 @@ strong{
     align-items: center;
 }
 
-.about__imagem__foto{
+.about__imagem__foto {
     width: 410px;
     height: 410px;
     animation: imagemVoando 4s ease-in-out infinite;
     animation-delay: 2.1s;
 }
 
-.about__imagem__foto__animacao{
+.about__imagem__foto__animacao {
     position: relative;
     width: 100%;
     height: 100%;
@@ -206,7 +206,7 @@ strong{
 
 /* -----------------------Seção Quem sou eu? <Foto> : Animação--------------------------------------- */
 
-.about__imagem__foto__animacao::after{
+.about__imagem__foto__animacao::after {
     content: '';
     position: absolute;
     width: 380px;
@@ -224,11 +224,11 @@ strong{
     animation: circuloGirando 5s linear infinite;
 }
 
-.about__imagem__foto__animacao span:nth-child(1){
+.about__imagem__foto__animacao span:nth-child(1) {
     filter: blur(10px);
 }
 
-.about__imagem__foto__animacao .about__imagem__foto__animacao__item{
+.about__imagem__foto__animacao .about__imagem__foto__animacao__item {
     position: relative;
     overflow: hidden;
     width: 380px;
@@ -258,7 +258,7 @@ strong{
     flex-direction: column;
 }
 
-.projetos__titulo{
+.projetos__titulo {
     width: 80%;
     height: 10%;
     /* background: #f01111; */
@@ -270,7 +270,7 @@ strong{
 
 /* -----------------------Seção Projetos <imagem>----------------------------------------------- */
 
-.posicionamento__projeto__imagem{
+.posicionamento__projeto__imagem {
     width: 100vw;
     height: 90vh;
     /* background: greenyellow; */
@@ -279,20 +279,21 @@ strong{
     align-items: center;
 }
 
-.projetos__imagem{
+.projetos__imagem {
     width: 80%;
     height: 80%;
     /* background: rebeccapurple; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .projetos__imagem__ancora {
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
 }
 
-.projetos__imagem__item{
+.projetos__imagem__item {
     width: 300px;
     height: 180px;
     border-radius: 10px;
@@ -302,7 +303,7 @@ strong{
 
 .projetos__imagem__ancora:hover {
     transform: scale(1.1);
-  }
+}
 
 /* -----------------------Seção Projetos <imagem> : decoração----------------------------------- */
 
@@ -310,11 +311,11 @@ strong{
     color: var(--cor-secundaria);
 }
 
-.tituloitem_span2{
+.tituloitem_span2 {
     color: indigo;
 }
 
-.animation__capa{
+.animation__capa {
     color: #737500;
 }
 
@@ -331,7 +332,7 @@ a {
     flex-direction: column;
 }
 
-.certificados__titulo{
+.certificados__titulo {
     width: 80%;
     height: 10vh;
     /* background: #f01111; */
@@ -341,7 +342,7 @@ a {
     margin-left: 30px;
 }
 
-.posicionamento__certificados__imagem{
+.posicionamento__certificados__imagem {
     width: 100vw;
     /* background: greenyellow; */
     display: flex;
@@ -349,7 +350,7 @@ a {
     align-items: center;
 }
 
-.certificados__imagem{
+.certificados__imagem {
     width: 90vw;
     /* background: rebeccapurple; */
     display: flex;
@@ -359,7 +360,7 @@ a {
     align-items: center;
 }
 
-.certificados__imagem__pai{
+.certificados__imagem__pai {
     width: 75vw;
     height: 250px;
     background: rgb(20, 20, 20);
@@ -370,25 +371,27 @@ a {
     gap: 30px;
 }
 
-.certificados__imagem__filho__foto{
+.certificados__imagem__filho__foto {
     max-width: 350px;
+    min-width: 350px;
     width: 350px;
     height: 190px;
     object-fit: cover;
     margin: 0 0 0 30px;
 }
 
-.certificados__imagem__filho__informações{
-    width: 40vw;
+.certificados__imagem__filho__informações {
+    width: 50%;
     height: 190px;
+    /* background: yellowgreen; */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.certificados__imagem__filho__informações__span{
+.certificados__imagem__filho__informações__span {
     color: var(--cor-secundaria);
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .footer {
@@ -402,11 +405,11 @@ a {
     color: var(--cor-principal);
 }
 
-.footer__texto{
+.footer__texto {
     margin: 10px;
 }
 
-.footer__name{
+.footer__name {
     font-size: 0.75rem;
     color: var(--cor-texto);
 }
@@ -418,6 +421,7 @@ a {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -425,22 +429,186 @@ a {
 }
 
 @keyframes imagemVoando {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-34px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
 @keyframes circuloGirando {
-    0%{
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1164px) {
+    .projetos {
+        width: 100vw;
+        height: 130vh;
+        background-image: url('/img/pxfuel-opacity05.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificados__imagem__filho__informações {
+        width: 40%;
+        height: 190px;
+        /* background: yellowgreen; */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .certificados__imagem__filho__informações__span{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1030px){
+    .container__nav{
+        width: 80%;
+    }
+
+    strong{
+        font-size: 1.74rem;
+    }
+
+    .typer{
+        font-size: 2.49rem;
+    }
+
+    .about{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .about__imagem__foto{
+        display: none;
+    }
+
+    .about__texto{
+        width: 80%;
+    }
+}
+
+@media (max-width: 940px) {
+    .certificados__imagem__pai {
+        width: 50vw;
+        height: 450px;
+        background: rgb(20, 20, 20);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .certificados__imagem__filho__foto {
+        max-width: 80%;
+        min-width: 80%;
+        width: 300px;
+        height: 190px;
+        object-fit: cover;
+        margin: 25px 0 0 0;
+    }
+
+    .certificados__imagem__filho__informações {
+        width: 80%;
+        height: 190px;
+        /* background: yellowgreen; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .certificados__imagem__filho__informações__span{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__nav{
+        width: 100%;
+    }
+
+    .container__nav__botao{
+        width: 25%;
+    }
+
+    strong{
+        font-size: 1.56rem;
+    }
+
+    .typer{
+        font-size: 2.24rem;
+    }
+
+    .projetos{
+        height: 240vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .projetos {
+        width: 100vw;
+        height: 250vh;
+        background-image: url('/img/pxfuel-opacity05.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos__imagem {
+        display: flex;
+        gap: 30px;
+    }
+
+    .certificados__imagem__pai {
+        width: 70vw;
+        height: 450px;
+        background: rgb(20, 20, 20);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .certificados__imagem__filho__foto {
+        max-width: 80%;
+        min-width: 80%;
+        width: 300px;
+        height: 190px;
+        object-fit: cover;
+        margin: 25px 0 0 0;
+    }
+
+    .certificados__imagem__filho__informações {
+        width: 80%;
+        height: 150px;
+        /* background: yellowgreen; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .certificados__imagem__filho__informações__span{
+        font-size: 1.3rem;
     }
 }
