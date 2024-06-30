@@ -180,6 +180,58 @@ strong {
     gap: 30px;
 }
 
+.about__texto__posicao__pai{
+    width: 100%;
+    /* background: #737500; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__texto__posicao__link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(var(--cor-animation), var(--cor-secundaria));
+    border-radius: 20%;
+    font-size: 35px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.about__texto__posicao__link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--cor-animation), var(--cor-secundaria));
+    border-radius: 20%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.about__texto__posicao__link:hover::before{
+    filter: blur(10px);
+}
+
+.about__texto__posicao__link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--cor-principal);
+    border-radius: 20%;
+    transform: scale(.88);
+    z-index: -1;
+    transition: .2s ease;
+}
+
+.about__texto__posicao__link:hover::after{
+    transform: scale(0);
+}
+
 /* -----------------------Seção Quem sou eu? <Foto>--------------------------------------- */
 
 .about__imagem {
