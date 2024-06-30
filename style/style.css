@@ -125,6 +125,11 @@ body {
     gap: 30px;
 }
 
+.texto__mobile{
+    opacity: 0;
+    font-size: 1px;
+}
+
 strong {
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
@@ -610,5 +615,48 @@ a {
 
     .certificados__imagem__filho__informações__span{
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px){
+    .texto__mobile{
+        opacity: 1;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .typer{
+        display: none;
+    }
+
+    .cursor{
+        display: none;
+    }
+
+    .background__section__texto__posicao__paragrafo{
+        display: none;
+    }
+
+    .background__section video{
+        height: 100%;
+    }
+
+    .about{
+        display: none;
+    }
+
+    .projetos{
+        display: none;
+    }
+
+    .certificados{
+        display: none;
+    }
+
+    .footer{
+        display: none;
     }
 }
