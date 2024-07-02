@@ -472,6 +472,26 @@ a {
     color: var(--cor-texto);
 }
 
+#buttonToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: var(--cor-secundaria);
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+#buttonToTop:hover {
+    background-color: #ac0a0a;
+}
+
 /* -----------------------Animações------------------------------------------------------------- */
 
 @keyframes slideTop {
