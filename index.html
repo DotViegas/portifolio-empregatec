@@ -318,12 +318,42 @@
         </div>
         <span style="display:block; height:30px;"></span>
     </section>
+    <section class="contato">
+        <div class="contato__contato">
+            <h2 class="contato__contato__titulo">Contato</h2>
+            <form class="contato__contato__form" action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Nome completo" id="nomeContato" class="item" autocomplete="off">
+                        <div class="error-txt">O nome não pode ficar em branco</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="email" placeholder="E-mail" id="emailContato" class="item" autocomplete="off">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="phone" placeholder="Numero de contato" id="numeroContato" class="item" autocomplete="off">
+                        <div class="error-txt">O numero de contato não pode ficar em branco</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="email" placeholder="Assunto" id="assuntoContato" class="item" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="" id="mensagemContato" cols="30" rows="10" placeholder="Sua mensagem" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">A mensagem não pode ficar em branco</div>
+                </div>
+                <button class="buttomContato" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <section class="footer">
             <h5 class="footer__texto">Desenvolvido por <span class="footer__name">João Victor Ferreira Viegas</span></h5>
         </section>
     </footer>
-    <section></section>
     <button onclick="topFunction()" id="buttonToTop" title="Go to top"><i class='bx bx-chevrons-up'></i></button>
 </body>
 

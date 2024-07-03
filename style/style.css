@@ -452,6 +452,77 @@ a {
     font-size: 1.5rem;
 }
 
+/* -----------------------Seção Contato--------------------------------------------------------- */
+
+.contato{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__contato__titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.contato__contato__form{
+    width: 600px;
+    text-align: center;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field{
+    width: 48.5%;
+}
+
+.item{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--cor-animation);
+    font-size: 16px;
+    color: var(--cor-texto);
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+.item::placeholder{
+    color: var(--cor-principal-hover);
+}
+
+.textarea-field .item{
+    resize: none;
+}
+
+.buttomContato{
+    padding: 12px 64px;
+    background: var(--cor-secundaria);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--cor-hover);
+    font-size: 16px;
+    color: var(--cor-texto);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.buttomContato:hover{
+    box-shadow: none;
+    background: var(--cor-animation);
+}
+
+/* -----------------------Seção Footer---------------------------------------------------------- */
+
 .footer {
     width: 100vw;
     height: 8vh;
@@ -471,6 +542,8 @@ a {
     font-size: 0.75rem;
     color: var(--cor-texto);
 }
+
+/* -----------------------Botão para o topo----------------------------------------------------- */
 
 #buttonToTop {
     display: none;
