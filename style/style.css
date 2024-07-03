@@ -25,6 +25,8 @@ body {
     background: var(--cor-principal);
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* -----------------------Barra de navegação--------------------------------------------------- */
@@ -454,7 +456,7 @@ a {
 
 .footer {
     width: 100vw;
-    height: 8vh;
+    height: 5vh;
     background-color: var(--cor-secundaria);
     font-size: 0.75rem;
     display: flex;
