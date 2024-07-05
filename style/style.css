@@ -7,7 +7,7 @@
     --cor-principal-hover: #303030;
     --cor-secundaria: #f10c0c;
     --cor-hover: #f01111;
-    --cor-animation: #700000;
+    --cor-animation: #460101;
     --cor-texto: #EEEEEE;
     --montserrat: "Montserrat", "sans-serif";
 }
@@ -25,6 +25,8 @@ body {
     background: var(--cor-principal);
     font-family: "consolas", "sans-serif";
     color: var(--cor-texto);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* -----------------------Barra de navegação--------------------------------------------------- */
@@ -370,11 +372,15 @@ strong {
 }
 
 .tituloitem_span2 {
-    color: indigo;
+    color: rgb(143, 40, 216);
+}
+
+.tituloitem_span3{
+    color: #00e1ff;
 }
 
 .animation__capa {
-    color: #737500;
+    color: #d8db00;
 }
 
 a {
@@ -525,7 +531,7 @@ a {
 
 .footer {
     width: 100vw;
-    height: 8vh;
+    height: 5vh;
     background-color: var(--cor-secundaria);
     font-size: 0.75rem;
     display: flex;
