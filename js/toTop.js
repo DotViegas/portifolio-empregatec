@@ -6,7 +6,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         document.querySelector("#buttonToTop").style.display = "block";
     } else {
         document.querySelector("#buttonToTop").style.display = "none";
