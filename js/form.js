@@ -13,20 +13,84 @@ function enviarEmail() {
 
     //Código smtpJS
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "joaovictorviegas53@gmail.com",
-        Password : "D7C7B8F0543058E634161E667E2D8F783675",
-        To : 'joaovictorviegas53@gmail.com',
-        From : "joaovictorviegas53@gmail.com",
-        Subject : assunto.value,
-        Body : corpoMensagem
+        SecureToken : "0dcdacc2-c1af-43c0-8ddf-1a07b512ad07",
+        To: 'joaovictorviegas53@gmail.com',
+        From: "joaovictorviegas53@gmail.com",
+        Subject: assunto.value,
+        Body: corpoMensagem
     }).then(
-      message => alert(message)
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Enviado!",
+                    text: "A sua mensagem foi enviada com sucesso!",
+                    icon: "success"
+                });
+            }
+        }
     );
+}
+
+function checarInputs() {
+    const itens = document.querySelectorAll('.item');
+
+    for (const item of itens) {
+        if (item.value == '') {
+            item.classList.add('error');
+            item.parentElement.classList.add('error');
+        }
+
+        //evento e-mail
+        if (itens[1].value != '') {
+            checarEmail()
+        }
+
+        itens[1].addEventListener('keyup', () => {
+            checarEmail();
+        });
+
+        item.addEventListener('keyup', () => {
+            if (item.value != '') {
+                item.classList.remove('error');
+                item.parentElement.classList.remove('error');
+            } else {
+                item.classList.add('error');
+                item.parentElement.classList.add('error');
+            }
+        })
+    }
+}
+
+
+//Nessa parte ele verifica se o Email está no formato adequado como: "123@email.com"
+function checarEmail() {
+    const emailEscopo = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+    const erroTextoEmail = document.querySelector('.error-txt.email');
+
+    if (!email.value.match(emailEscopo)) {
+        email.classList.add('error');
+        email.parentElement.classList.add('error');
+
+        if (email.value != '') {
+            erroTextoEmail.innerText = 'Insira um Endereço de E-mail válido';
+        } else {
+            erroTextoEmail.innerText = 'O E-mail não pode ficar em branco';
+        }
+    } else {
+        email.classList.remove('error');
+        email.parentElement.classList.remove('error');
+    }
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    checarInputs();
 
-    enviarEmail()
+    if(!nomeCompleto.classList.contains('error') && !email.classList.contains('error') && !numero.classList.contains('error') && !assunto.classList.contains('error') && !mensagem.classList.contains('error')){
+        enviarEmail();
+
+        form.reset();
+        return false;
+    }
 });

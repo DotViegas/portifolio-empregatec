@@ -10,10 +10,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script defer src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
     <script defer src="js/main.js" defer></script>
     <script defer src="js/toTop.js"></script>
     <script defer src="js/form.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
@@ -23,7 +24,7 @@
             <a href="#quemSou" style="--1:1;" class="container__nav__botao">Quem sou?</a>
             <a href="#projetos" style="--1:3;" class="container__nav__botao">Projetos</a>
             <a href="#certificados" style="--1:2;" class="container__nav__botao">Certificados</a>
-            <a href="" style="--1:4;" class="container__nav__botao">Contato</a>
+            <a href="#contato" style="--1:4;" class="container__nav__botao">Contato</a>
         </nav>
     </header>
     <section class="videoBG">
@@ -411,7 +412,7 @@
         </div>
         <span style="display:block; height:30px;"></span>
     </section>
-    <section class="contato">
+    <section id="contato" class="contato">
         <div class="contato__contato">
             <h2 class="contato__contato__titulo">Contato</h2>
             <form class="contato__contato__form" action="#">
@@ -422,7 +423,7 @@
                     </div>
                     <div class="input-field field">
                         <input type="email" placeholder="E-mail" id="emailContato" class="item" autocomplete="off">
-                        <div class="error-txt">O E-mail não pode ficar em branco</div>
+                        <div class="error-txt email">O E-mail não pode ficar em branco</div>
                     </div>
                 </div>
                 <div class="input-box">

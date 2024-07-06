@@ -498,6 +498,14 @@ a {
     border-radius: 10px;
 }
 
+.field.error .item {
+    border: 2px solid red;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
 .textarea-field .item {
     resize: none;
 }
