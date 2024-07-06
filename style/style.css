@@ -498,10 +498,6 @@ a {
     border-radius: 10px;
 }
 
-.item::placeholder {
-    color: var(--cor-principal-hover);
-}
-
 .textarea-field .item {
     resize: none;
 }
